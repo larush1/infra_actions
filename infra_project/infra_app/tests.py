@@ -20,7 +20,7 @@ class StaticPagesURLTests(TestCase):
         response = self.guest_client.get('/')
         self.assertContains(
             response,
-            ('У меня получилось! На серваке 51.250.17.12'
+            ('У меня получилось! С попытки №2 На серваке 51.250.17.12'
              'через контейнер Докер!! :))) ЮЮЮЮПППИИИИИ')
         )
 
